@@ -110,5 +110,6 @@ a:hover {
 
 h1{text-align: center;font-size: 48px;text-decoration:italic;color:#abcdef;line-height: 100px;}
 p{text-align: center;font-size: 20px;line-height: 30px;}
-
-.footer{width:600px;padding:20px 0 0;border-top:1px solid #ccc;position:fixed;bottom:0;left:50%;margin-left:-300px;color:#ccc;font-size:14px;line-height:30px;text-align:center;}
+ul{width:600px;margin:100px auto;}
+ul li{margin-bottom:10px;}
+footer.index{width:600px;padding:20px 0 0;border-top:1px solid #ccc;position:fixed;bottom:0;left:50%;margin-left:-300px;color:#ccc;font-size:14px;line-height:30px;text-align:center;}
