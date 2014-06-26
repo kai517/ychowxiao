@@ -5,6 +5,7 @@
 * Author : YchowXiao
 * Contect : yuanzhouxiao@foxmail.com
 **********************************************/
+body{font-family:Georgia, Garamond, "Times New Roman", Times, serif;color:#444;}
 
 article,
 aside,
@@ -108,6 +109,6 @@ a:hover {
 }
 
 h1{text-align: center;font-size: 48px;text-decoration:italic;color:#abcdef;line-height: 100px;}
-p{text-align: center;font-size: 20px;line-height: 30px;color:red}
+p{text-align: center;font-size: 20px;line-height: 30px;}
 
 .footer{width:600px;padding:20px 0 0;border-top:1px solid #ccc;position:fixed;bottom:0;left:50%;margin-left:-300px;color:#ccc;font-size:14px;line-height:30px;text-align:center;}
