@@ -34,7 +34,7 @@ html {
 
 a:hover,
 a:active {
-  outline: 0;cursor:pointer;
+  outline: 0;
 }
 figure {
   padding: 0;
@@ -102,7 +102,7 @@ dl {
 a:link,
 a:visited {
   text-decoration: none;
-  color: #108080;
+  color: #108080;cursor:pointer;
 }
 a:hover {
   color: #cc3311;
