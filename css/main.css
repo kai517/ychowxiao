@@ -31,7 +31,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-a{color:#108080;}
+
 a:hover,
 a:active {
   outline: 0;
@@ -102,7 +102,7 @@ dl {
 a:link,
 a:visited {
   text-decoration: none;
-  color: #555555;
+  color: #108080;
 }
 a:hover {
   color: #cc3311;
