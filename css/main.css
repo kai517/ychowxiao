@@ -1,0 +1,120 @@
+@charset "utf-8";
+/*********************************************
+* CSS Document for Ychowxiao.com
+* Start Time 2014-06-29
+* Author : YchowXiao
+* Contect : yuanzhouxiao@foxmail.com
+**********************************************/
+body{font-family:Georgia, Garamond, "Times New Roman", Times, serif;color:#444;background:url("/images/bg-body.png") repeat;}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+figure {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+ol,
+ul,
+dl {
+  list-style: none;
+}
+body,
+p,
+ol,
+ul,
+dl {
+  padding: 0;
+  margin: 0;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #108080;
+}
+a:hover {
+  color: #cc3311;
+}
+header{width:1024px;margin:0 auto;}
+article{width:1024px;margin:0 auto;background:#fff;border-radius:8px;min-height:512px;}
+section#blog{padding:32px;}
+h1,h2{text-align: right;font-size: 30px;text-decoration:italic;color:rgb(51,51,51);line-height: 40px;letter-spacing:3px;text-transform:uppercase;}
+h2{letter-spacing:2px;font-style:italic;color:#333;font-size:18px;line-height:0px;}
+#blog h2{text-align:center;line-height:30px;color:#108080;}
+p{text-align: center;line-height: 30px;}
+#blog p{text-align:left;text-indent:2em;}
+ul{width:800px;margin:0 auto;}
+ul li{margin-bottom:10px;}
+#ft{width:1024px;padding:10px 0 ;border-top:1px dashed #ccc;position:fixed;bottom:0;left:50%;margin-left:-512px;color:#000;font-size:14px;line-height:30px;text-align:center;}
