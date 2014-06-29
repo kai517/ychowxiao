@@ -118,4 +118,4 @@ p{text-align: center;line-height: 30px;}
 #blog p{text-align:left;text-indent:2em;}
 ul{width:800px;margin:0 auto;}
 ul li{margin-bottom:10px;}
-#ft{width:1024px;padding:10px 0 ;border-top:1px dashed #ccc;position:fixed;bottom:0;left:50%;margin-left:-512px;color:#000;font-size:14px;line-height:30px;text-align:center;}
+#ft{padding:10px 0 ;border-top:1px dashed #ccc;color:#000;font-size:14px;line-height:30px;text-align:center;}
