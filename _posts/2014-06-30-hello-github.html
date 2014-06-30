@@ -101,9 +101,9 @@ title:GitHub(Jekyll)搭建属于自己的博客！
             　　<h2>{{ page.title }}</h2>
             　　<p>最新文章</p>
             　　<ul>
-            　　　　{% for post in site.posts %}
+            　　　　
             　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            　　　　{% endfor %}
+            　　
             　　</ul>
         </code>
     </pre>
@@ -129,4 +129,3 @@ title:GitHub(Jekyll)搭建属于自己的博客！
 
 <p>网站现在出搭建，有许多技术作者还不是很清楚，但是作者努力学习中<img src="/images/fighting.gif" alt="Fighting!">。。</p>
 <p>{{ page.date | date_to_string }}</p> 
-{% endcapture %}
