@@ -7,7 +7,7 @@ title:GitHub(Jekyll)搭建属于自己的博客！
 <h3>工具</h3>
 <p>在我们开始之前，首先你得先去GitHub(http://www.github.com)上注册一个自己的账号。然后确保你电脑里面安装了Git,或者Webstorm,Sublime(很多编辑器都有对Git的一个操作支持，默认的没有，这里需要自己去下载插件哦)。</p>
 <h3>Jekyll是什么？</h3>
-<p><img src="../images/jekyll.jpg"></p>
+<p><img src="/images/jekyll.jpg"></p>
 <p><a href="http://jekyllrb.com/">Jekyll</a> 是一个静态站点生成器，它会根据网页源码生成静态文件。它提供了模板、变量、插件等功能，所以实际上可以用来编写整个网站。我们这里呢就是用到了它。实现的步骤就是我们现在本地编写符合Jekyll规范的网站源码，然后上传到github，由github生成并托管整个网站。当然它会是你所想要的，<mark>Free!</mark>and<mark>无限流量</mark></p>
 <p>但是东西都有两面性，好的同时我们也应该看见不足的一面。正如你所看到本文章下面的评论功能，这里作者使用了<a href="https://disqus.com/">Disqus</a>，因为Jekyll是静态的，你想添加动态功能就只有使用外部的服务。当然了它也没有数据库！这里就已经决定了它只能用于个人博客这类的网站，大数据网站它实在扛不起啊！！！</p>
 <h3>开始！</h3>
@@ -108,7 +108,7 @@ title:GitHub(Jekyll)搭建属于自己的博客！
         </code>
     </pre>
 </div>
-<p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了<pre>{% for post in site.posts %}</pre>，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。</p>
+<p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了<pre></pre>，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。</p>
 <h5>发布！</h5>
 <p>现在，这个简单的Blog就可以发布了。先把所有内容加入本地git库。</p>
 <div class="highlight">
