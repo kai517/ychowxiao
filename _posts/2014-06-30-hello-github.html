@@ -34,5 +34,37 @@ title: GitHub(Jekyll)搭建属于自己的博客！
 </div>
 <mark>以下所有步骤都在gh-pages分支完成！</mark>
 <h5>创建配置文件</h5>
+<p>在项目根目录下，建立一个名为_config.yml的文本文件。它是jekyll的配置文件，我们在里面填入如下内容，其他设置都可以用默认选项。</p>
+<div class="highlight">
+    <pre>
+        baseurl: /jekyll_demo
+    </pre>
+</div>
+<h5>创建模板文件</h5>
+<p>这里我们再创建一个_layouts目录，用于存放模板文件。</p>
+<div class="highlight">
+    <pre>
+        　$ mkdir _layouts
+    </pre>
+</div>
+<p>进入该目录，创建一个default.html文件，用作默认的模板。当然了你也可以叫做其他的名字。并填入一下内容，这里填写内容请在自己的编辑器里面填充。</p>
+<div class="highlight">
+    <pre>
+        <code class="html">
+            　<!DOCTYPE html>
+            　　<html>
+        　　<head>
+            　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            　　　　<title>{{ page.title }}</title>
+            　　</head>
+        　　<body>
+
+        　　　　{{ content }}
+
+        　　</body>
+        　　</html>
+        </code>
+    </pre>
+</div>
 <p>网站现在出搭建，有许多技术作者还不是很清楚，但是作者努力学习中<img src="/images/fighting.gif" alt="Fighting!">。后续的文章里将会给大家介绍网站如何与GitHub“相识”，以及“相知”。还有就是作者平时的一些经验，经验恐怕谈不上，应该是一些小tips，嘻嘻。。。。小伙伴们喜欢的话下面留个言吧！你可以吐槽，但是请不要吐我一身。。。</p>
 <p>{{ page.date | date_to_string }}</p>
