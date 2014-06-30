@@ -48,23 +48,7 @@ title: GitHub(Jekyll)搭建属于自己的博客！
     </pre>
 </div>
 <p>进入该目录，创建一个default.html文件，用作默认的模板。当然了你也可以叫做其他的名字。并填入一下内容，这里填写内容请在自己的编辑器里面填充。</p>
-<div class="highlight">
-    <pre>
-        
-            　<!DOCTYPE html>
-            　　<html>
-        　　<head>
-            　　　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-            　　　　<title>{{ page.title }}</title>
-            　　</head>
-        　　<body>
-
-        　　　　{{ content }}
-
-        　　</body>
-        　　</html>
-
-    </pre>
-</div>
+<mark>写到这里，我就发现了坑！这货居然对pre标签里面的一些代码直接转化成了页面。唉。只能用图片代替了</mark>
+<img src="/images/a1.jpg">
 <p>网站现在出搭建，有许多技术作者还不是很清楚，但是作者努力学习中<img src="/images/fighting.gif" alt="Fighting!">。后续的文章里将会给大家介绍网站如何与GitHub“相识”，以及“相知”。还有就是作者平时的一些经验，经验恐怕谈不上，应该是一些小tips，嘻嘻。。。。小伙伴们喜欢的话下面留个言吧！你可以吐槽，但是请不要吐我一身。。。</p>
 <p>{{ page.date | date_to_string }}</p>
