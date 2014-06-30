@@ -50,5 +50,27 @@ title: GitHub(Jekyll)搭建属于自己的博客！
 <p>进入该目录，创建一个default.html文件，用作默认的模板。当然了你也可以叫做其他的名字。并填入一下内容，这里填写内容请在自己的编辑器里面填充。</p>
 <mark>写到这里，我就发现了坑！这货居然对pre标签里面的一些代码直接转化成了页面。唉。只能用图片代替了</mark>
 <img src="/images/a1.jpg">
+<p>这里面的\{\{ page.title \}\}表示文章标题，\{\{ content \}\}表示文章内容，更多模板变量请参考<a href="https://github.com/jekyll/jekyll/wiki/Template-Data">官方文档</a>。</p>
+<h5>创建第一篇文章</h5>
+<p>回到项目根目录(这里所说的根目录是指gh-pages分支哦！)，创建一个_posts目录，用于存放blog文章。</p>
+<div class="highlight">
+    <pre>
+        $ mkdir _posts
+    </pre>
+</div>
+<p>进入该目录，创建第一篇文章。文章就是普通的文本文件，文件名假定为2012-08-25-hello-world.html。(注意，文件名必须为"年-月-日-文章标题.后缀名"的格式。如果网页代码采用html格式，后缀名为html；如果采用markdown格式，后缀名为md）在该文件中，填入以下内容：（注意，行首不能有空格）</p>
+<div class="highlight">
+    <pre>
+        <code class="html">
+            　---
+            　　layout: default
+            　　title: 你好，世界
+            　　---
+            　　<h2>\{\{ page.title \}\}</h2>
+            　　<p>我的第一篇文章</p>
+            　　<p>\{\{ page.date | date_to_string \}\}</p>
+        </code>
+    </pre>
+</div>
 <p>网站现在出搭建，有许多技术作者还不是很清楚，但是作者努力学习中<img src="/images/fighting.gif" alt="Fighting!">。后续的文章里将会给大家介绍网站如何与GitHub“相识”，以及“相知”。还有就是作者平时的一些经验，经验恐怕谈不上，应该是一些小tips，嘻嘻。。。。小伙伴们喜欢的话下面留个言吧！你可以吐槽，但是请不要吐我一身。。。</p>
 <p>{{ page.date | date_to_string }}</p>
