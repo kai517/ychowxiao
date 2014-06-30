@@ -108,7 +108,7 @@ title:GitHub(Jekyll)搭建属于自己的博客！
         </code>
     </pre>
 </div>
-<p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了{% for post in site.posts %}，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。</p>
+<p>它的Yaml文件头表示，首页使用default模板，标题为"我的Blog"。然后，首页使用了<pre>{% for post in site.posts %}</pre>，表示对所有帖子进行一个遍历。这里要注意的是，Liquid模板语言规定，输出内容使用两层大括号，单纯的命令使用一层大括号。至于{{site.baseurl}}就是_config.yml中设置的baseurl变量。</p>
 <h5>发布！</h5>
 <p>现在，这个简单的Blog就可以发布了。先把所有内容加入本地git库。</p>
 <div class="highlight">
@@ -129,4 +129,4 @@ title:GitHub(Jekyll)搭建属于自己的博客！
 
 <p>网站现在出搭建，有许多技术作者还不是很清楚，但是作者努力学习中<img src="/images/fighting.gif" alt="Fighting!">。。</p>
 <p>{{ page.date | date_to_string }}</p> 
-            　　　　{% endfor %}
+            　　
