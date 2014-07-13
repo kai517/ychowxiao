@@ -8,7 +8,47 @@ title: Ychow Xiao's Blog
 　　　　{% endfor %}
 　　　　
 　　　　</ul>
-　　　　<p style="display:none">http://pan.baidu.com/s/1kTgclKz</p>
+　　　　<p style="display:none"><!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style type="text/css">
+		*{margin:0;padding:0}
+		a{display: block;width:30px;height:50px;background: blue;float:left;color:#fff;line-height: 50px;text-align: center}
+		span{display: block;width:50px;height:50px;background: #abcdef;color:#fff;text-align: center;line-height: 50px;float:left}
+	</style>
+</head>
+<body>
+	<a href="javascript:;" class="slow">slow</a>
+	<span>5</span>
+	<a href="javascript:;" class="add">add</a>
+	<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+	<script type="text/javascript">
+		var oOld=parseInt($('span').text());
+		$('.slow').click(function(event) {
+			var oNow=$('span').text();
+			$('.add').css('background','blue')
+				oNow-=1;
+				if(oNow==oOld-1){
+					$('span').text(oNow);
+					$('.slow').css('background','#ccc')
+				}else if(oNow>=oOld-1){$('span').text(oNow);}else{return false}
+				
+
+		});
+		$('.add').click(function(event) {
+			var oNow2=parseInt($('span').text());
+			$('.slow').css('background','blue')
+			++oNow2
+			if(oNow2==oOld+1){
+				$('span').text(oNow2);
+				$('.add').css('background','#ccc')
+			}else if(oNow2<=oOld+1){$('span').text(oNow2);}else{return false}
+		});
+	</script>
+</body>
+</html></p>
 　　　　<p style="display:none">http://pan.baidu.com/s/1pJiBSmB</p>
 
 
