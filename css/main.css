@@ -123,14 +123,12 @@ a:hover {
   transform: translate3d(0,0,0);}
   #ft{padding:10px 0 ;color:#000;font-size:14px;line-height:30px;text-align:center;}
   header{width:1024px;margin:0 auto;position:relative;z-index:5;text-shadow:0 0 3px #fff;}
-  	header h1{font-weight:500;font-family:"微软雅黑";letter-spacing:5px;font-size:60px;}
+  	header h1{font-weight:500;font-family:"微软雅黑";letter-spacing:5px;font-size:60px;color:#fff;}
   	header h2{color: #dbedf7;font-size: 18px;font-family: 微软雅黑, Raleway, Arial, Helvetica, sans-serif;text-transform: uppercase;letter-spacing: 2px;line-height: 1.2;margin-top: 14px;text-align: right;text-shadow: 0 0 3px #fff;}
   article{width:1024px;margin:0 auto;background:#fff;border-radius:8px;min-height:512px;position:relative;z-index:9;}
 /**Index.html**/
   section#blog{padding:32px;}
-  h1,h2{text-align: right;font-size: 30px;text-decoration:italic;color:rgb(51,51,51);line-height: 40px;letter-spacing:3px;text-transform:uppercase;}
-  h2{letter-spacing:2px;font-style:italic;color:#333;font-size:18px;line-height:0px;}
-  h1 a{color:rgb(51,51,51)!important;}
+
   
   p{text-align: center;line-height: 30px;}
  
