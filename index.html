@@ -2,34 +2,15 @@
 layout: default
 title: Ychow Xiao's Blog
 ---
+
+<div class="bg_bac"></div>
 <ul>
 　　　　{% for post in site.posts %}
 　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
 　　　　{% endfor %}
 　　　　
-　　　　</ul>
-　　　　<p style="display:none">var oOld=parseInt($('span').text());
-		$('.slow').click(function(event) {
-			var oNow=$('span').text();
-			$('.add').css('background','blue')
-				oNow-=1;
-				if(oNow==oOld-1){
-					$('span').text(oNow);
-					$('.slow').css('background','#ccc')
-				}else if(oNow>=oOld-1){$('span').text(oNow);}else{return false}
-				
+</ul>
 
-		});
-		$('.add').click(function(event) {
-			var oNow2=parseInt($('span').text());
-			$('.slow').css('background','blue')
-			++oNow2
-			if(oNow2==oOld+1){
-				$('span').text(oNow2);
-				$('.add').css('background','#ccc')
-			}else if(oNow2<=oOld+1){$('span').text(oNow2);}else{return false}
-		});</p>
-　　　　<p style="display:none">http://pan.baidu.com/s/1pJiBSmB</p>
 
 
  
