@@ -111,7 +111,7 @@ a:hover {
 
 /**Public**/
   body{background-color: #0d2735;overflow-x: hidden;width: 100%;position: relative;}
-  div.bg_bac{width:150%;height:1000px;position:absolute;left:0;top:0;background:url(http://mweb.baidu.com/wp-content/themes/flato/img/bg_mweb.jpg) no-repeat;background-size:100% auto;}
+  div.bg_bac{width:150%;height:1000px;position:absolute;left:0;top:0;background:url(http://mweb.baidu.com/wp-content/themes/flato/img/bg_mweb.jpg) no-repeat;background-size:100% auto;z-index:1;}
   -webkit-animation: bgmove 300s linear infinite;
   -moz-animation: bgmove 300s linear infinite;
   -ms-animation: bgmove 300s linear infinite;
@@ -124,7 +124,7 @@ a:hover {
   transform: translate3d(0,0,0);
   #ft{padding:10px 0 ;color:#000;font-size:14px;line-height:30px;text-align:center;}
   header{width:1024px;margin:0 auto;}
-  article{width:1024px;margin:0 auto;background:#fff;border-radius:8px;min-height:512px;}
+  article{width:1024px;margin:0 auto;background:#fff;border-radius:8px;min-height:512px;position:relative;z-index:9;}
 /**Index.html**/
   section#blog{padding:32px;}
   h1,h2{text-align: right;font-size: 30px;text-decoration:italic;color:rgb(51,51,51);line-height: 40px;letter-spacing:3px;text-transform:uppercase;}
