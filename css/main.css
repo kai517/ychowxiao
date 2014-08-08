@@ -169,7 +169,7 @@ h1,h2{text-align: right;font-size: 30px;text-decoration:italic;color:rgb(51,51,5
     ul.article_list li{margin-bottom:10px;float:left;text-align:center;}
     ul.article_list li:hover{text-shadow:2px 0px 2px #ccc;}
       ul.article_list li span{display:block;width:120px;}
-      ul.article_lsit li span::after{display:block;content:'';float:right;width:5px;height:50px;background:#abcdef}
+      ul.article_lsit li span:after{display:block;content:'';float:right;width:5px;height:50px;background:#abcdef}
     
 /**Article.html**/   
   #blog p{text-align:left;text-indent:2em;} 
