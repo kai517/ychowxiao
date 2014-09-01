@@ -1,0 +1,57 @@
+---
+layout: acticle
+title: Heatmap.js v2.0 – 最强大的 Web 动态热图
+---
+<style>
+    #heatmapContainerWrapper { width:100%; height:800px; position:absolute; }
+    #heatmapContainer { width:100%; height:800px;}
+    h1 { position:absolute; left:0; top:0; background:white; padding:10px;}
+</style>
+<h2>{{ page.title }}</h2>
+<p>
+Heatmap 是用来呈现一定区域内的统计度量，最常见的网站访问热力图就是以特殊高亮的形式显示访客热衷的页面区域和访客所在的地理区域的图示。Heatmap.js 这个 JavaScript 库可以实现各种动态热力图的网页，帮助您研究和可视化用户的行为。
+</p>
+<p>
+Heatmap.js V2.0 是目前网络上最先进的热图可视化库。新的2.0版本 Heatmap.js 更快，拥有更强的渲染模块，使用更方便，因此您可以快速掌握和扩展自定义功能。
+</p>
+<div id="heatmapContainerWrapper">
+      <div id="heatmapContainer">
+
+      </div>
+</div>
+<script src="/css/heatmap.min.js"></script>
+<script>
+      window.onload = function() {
+        // create a heatmap instance
+        var heatmap = h337.create({
+          container: document.getElementById('heatmapContainer'),
+          maxOpacity: .6,
+          radius: 50,
+          blur: .90,
+          // backgroundColor with alpha so you can see through it
+          backgroundColor: 'rgba(0, 0, 58, 0.96)'
+        });
+        var heatmapContainer = document.getElementById('heatmapContainerWrapper');
+
+        heatmapContainer.onmousemove = heatmapContainer.ontouchmove = function(e) {
+          // we need preventDefault for the touchmove
+          e.preventDefault();
+          var x = e.layerX;
+          var y = e.layerY;
+          if (e.touches) {
+            x = e.touches[0].pageX;
+            y = e.touches[0].pageY;
+          }
+          
+          heatmap.addData({ x: x, y: y, value: 1 });
+
+        };
+
+        heatmapContainer.onclick = function(e) {
+          var x = e.layerX;
+          var y = e.layerY;
+          heatmap.addData({ x: x, y: y, value: 1 });
+        };
+
+      };
+    </script>
