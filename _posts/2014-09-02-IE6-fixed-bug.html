@@ -4,7 +4,18 @@ title: IE6 Fixed Bug
 ---
 <h2>{{ page.title }}</h2>
 <p>position:fixed是让某个元素固定浮动在浏览器的某处，但这个属性IE6支持部完整。</p>
-<p>这里有个支持IE6的方法，代码如下：</p>
+<p><mark>如果是IE6下请记得加入如下的代码，由于高亮插件的原因，所以没有写完整</mark></p>
+{% highlight ruby %}
+<style type="text/css">
+ html{overflow:hidden;}
+ body{height:100%;overflow:auto;}
+ #rightform form{position:absolute;}
+</style>
+{% endhighlight %}
+
+--------------------分割线---------------------------------
+
+
 {% highlight ruby %}
 <!DOCTYPE HTML>
 <html lang="en-US">
@@ -33,13 +44,6 @@ title: IE6 Fixed Bug
  top:120px;
 }
 </style>
-<!--[if IE 6]>
-<style type="text/css">
- html{overflow:hidden;}
- body{height:100%;overflow:auto;}
- #rightform form{position:absolute;}
-</style>
-<![endif]-->
 </head>
 <body>
 <div id="rightform">
