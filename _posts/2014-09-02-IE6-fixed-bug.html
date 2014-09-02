@@ -1,0 +1,59 @@
+---
+layout: acticle
+title: IE6 Fixed Bug
+---
+<h2>{{ page.title }}</h2>
+<p>position:fixed是让某个元素固定浮动在浏览器的某处，但这个属性IE6支持部完整。</p>
+<p>这里有个支持IE6的方法，DEMO如下：</p>
+{% highlight ruby %}
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<title>IE6 position:fixed bug</title>
+<style>
+* {
+ padding:0;
+ margin:0;
+}
+#rightform {
+ text-align:center;
+ padding:50px;
+ font:14px/22px Georgia, "Times New Roman", Times, serif;
+ height:1200px;
+ background:#ffc;
+}
+
+#rightform form {
+ background-color:#ddd;
+ padding:10px 20px;
+ border:1px solid #aaa;
+ position:fixed;
+ right:30px;
+ top:120px;
+}
+</style>
+<!--[if IE 6]>
+<style type="text/css">
+ html{overflow:hidden;}
+ body{height:100%;overflow:auto;}
+ #rightform form{position:absolute;}
+</style>
+<![endif]-->
+</head>
+<body>
+<div id="rightform">
+  <h2>
+  <a href="" title="IE6 position:fixed bug" rel="bookmark">IE6 position:fixed bug</a>
+  </h2>
+  <p>position:fixed; vs position:absolute;<br /></p>
+  <form id="g_search" method="get" action="#">
+    <input id="g_s" name="g_s" type="text" value=""  />
+    <input id="g_submit" name="g_submit" type="button" value="search" />
+  </form>
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+</body>
+</html>
+{% endhighlight %}
+<p>{{ page.date | date_to_string }}</p>
