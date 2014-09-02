@@ -6,7 +6,7 @@ title: IE6 Fixed Bug
 <p>position:fixed是让某个元素固定浮动在浏览器的某处，但这个属性IE6支持部完整。</p>
 <p>这里有个支持IE6的方法，代码请参考本页面！</p>
 <p><mark>不知道为啥，这个Markdown的代码高亮老是报错，导致大家只能查看本页面的代码。</mark></p>
-{% highlight html %}
+{% highlight ruby %}
 <!DOCTYPE HTML>
 <html lang="en-US">
 <head>
@@ -34,13 +34,7 @@ title: IE6 Fixed Bug
  top:120px;
 }
 </style>
-<!--[if IE 6]>
-<style type="text/css">
- html{overflow:hidden;}
- body{height:100%;overflow:auto;}
- #rightform form{position:absolute;}
-</style>
-<![endif]-->
+
 </head>
 <body>
 <div id="rightform">
