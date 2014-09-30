@@ -165,10 +165,11 @@ h1,h2{text-align: right;font-size: 30px;text-decoration:italic;color:rgb(51,51,5
   
   p{text-align: center;line-height: 30px;}
  
-  ul.article_list{width:400px;padding:50px 0 0 50px;}
+  ul.article_list{width:650px;padding:50px 0 0 50px;float:left;}
     ul.article_list li{margin-bottom:10px;}
     ul.article_list li:hover{text-shadow:2px 0px 2px #ccc;}
 
+  .index_aside{float: right;padding-top: 50px;display: block;width: 300px;background: #f7f7f7;text-shadow: #fff 0 1px;border-left: 1px solid #ccc;}
     
 /**Article.html**/   
   #blog p{text-align:left;text-indent:2em;} 
