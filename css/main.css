@@ -169,8 +169,12 @@ h1,h2{text-align: right;font-size: 30px;text-decoration:italic;color:rgb(51,51,5
     ul.article_list li{margin-bottom:10px;}
     ul.article_list li:hover{text-shadow:2px 0px 2px #ccc;}
 
-  .index_aside{float: right;padding-top: 50px;min-height:490px;width: 300px;background: #f7f7f7;text-shadow: #fff 0 1px;border-left: 1px solid #ccc;}
-    
+  .index_aside{float: right;padding: 50px 20px 0;min-height:490px;width: 260px;background: #f7f7f7;text-shadow: #fff 0 1px;border-left: 1px solid #ccc;}
+    aside.widget{margin:40px 0;}
+    	h3.widget-title{margin: 0 0 10px;padding-bottom: 10px;font-size: 16px;font-weight: 700;text-transform: uppercase;letter-spacing: 2px;border-bottom: 1px solid #dfdfdf;}
+	.container{text-indent:23px;}
+		li.menu-item{padding:5px 0;}
+		li.menu-item a{color:#136ec2;}
 /**Article.html**/   
   #blog p{text-align:left;text-indent:2em;} 
   #blog h2{text-align:center;line-height:30px;color:#108080;}
